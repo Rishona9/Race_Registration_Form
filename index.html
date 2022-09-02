@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Race Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <span>Register for</span>
+        <h1>1st Annual Hello World Run</h1>
+        <p>Date: Saturday October 1, 2022</p>
+        <p>Location: Cleveland Metroparks</p>
+        <p>Time: Race starts at 8am, Packet Pick-up starts at 7am</p>
+        <p>Distances: 10K, 5K, 1 mile walk</p>
+      </div>
+    </header>
+    <div class="container">
+      <form action="index.html" method="post" novalidate>
+        <div class="basic-info-box">
+          <fieldset class="basic-info">
+            <legend>Basic Information</legend>
+            <label for="first-name"
+              >First Name: <span>*</span>
+              <input type="text" id="first-name" name="user-first-name"
+            /></label>
+            <label for="last-name"
+              >Last Name: <span>*</span>
+              <input type="text" id="last-name" name="user-last-name"
+            /></label>
+            <label for="street-address"
+              >Street Address: <span>*</span>
+              <input type="text" id="street-address" name="user-street-address"
+            /></label>
+            <label for="city"
+              >City: <span>*</span>
+              <input type="text" id="city" name="user-city"
+            /></label>
+            <label for="state"
+              >State: <span>*</span>
+              <input type="text" id="state" name="user-state"
+            /></label>
+            <label for="zip"
+              >Zip: <span>*</span> <input type="text" id="zip" name="user-zip"
+            /></label>
+            <label for="phone-number"
+              >Phone Number: <span>*</span>
+              <input type="text" id="phone-number" name="user-phone-number"
+            /></label>
+            <label for="email"
+              >Email: <span>*</span>
+              <input type="text" id="email" name="user-email"
+            /></label>
+            <label for="dob"
+              >Date of Birth: <span>*</span>
+              <input type="text" id="dob" name="user-dob"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Race Information</legend>
+            <label for="race-selected">Select Race: <span>*</span></label>
+            <select id="race-selected" name="user-race">
+              <option hidden>Select Race</option>
+              <option value="10K">10K</option>
+              <option value="5K">5K</option>
+              <option value="1 mile walk">1 mile walk</option>
+            </select>
+            <div class="shirt-sizes">
+              <label for="size">T-shirt Size: <span>*</span></label>
+              <select id="size" name="user-size">
+                <option hidden>Select your size</option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="xlarge">XL</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset class="payment-methods">
+            <legend>Payment Information</legend>
+            <label for="payment">Payment Method: <span>*</span></label>
+            <select id="payment" name="user-payment">
+              <option value="select method" hidden>
+                Select Payment Method
+              </option>
+              <option value="credit card">Credit Card</option>
+              <option value="cash">Cash (payable on race day)</option>
+              <option value="check">Check (payable on race day</option>
+            </select>
+
+            <div class="credit-card">
+              <div class="expiration-box">
+                <div class="month-box">
+                  <label for="exp-month">Expiration Date: <span>*</span></label>
+                  <select id="exp-month" name="user-exp-month">
+                    <option hidden>Select Date</option>
+                    <option value="1">01 - January</option>
+                    <option value="2">02 - February</option>
+                    <option value="3">03 - March</option>
+                    <option value="4">04 - April</option>
+                    <option value="5">05 - May</option>
+                    <option value="6">06 - June</option>
+                    <option value="7">07 - July</option>
+                    <option value="8">08 - August</option>
+                    <option value="9">09 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option>
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+
+                <div class="year-box">
+                  <label for="exp-year">Expiration Year: <span>*</span></label>
+                  <select id="exp-year" name="user-exp-year">
+                    <option hidden>Select Year</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                  </select>
+                </div>
+              </div>
+              <div class="credit-card-box">
+                <div class="num-box">
+                  <label for="cc-num"
+                    >Card Number: <span>*</span>
+                    <input id="cc-num" name="user-cc-num" type="text" />
+                  </label>
+                </div>
+
+                <div class="zip-box">
+                  <label for="zip"
+                    >Zip Code: <span>*</span>
+                    <input id="zip" name="user-zip" type="text" />
+                  </label>
+                </div>
+
+                <div class="cvv-box">
+                  <label for="cvv"
+                    >CVV: <span>*</span>
+                    <input id="cvv" name="user-cvv" type="text" />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div class="waiver-checkbox">
+          <label for="waiver">
+            <input type="checkbox" name="waiver" />
+            <span
+              >By checking this box, I acknowledge that I have read and
+              understand the waiver</span
+            >
+          </label>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
