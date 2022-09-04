@@ -1,0 +1,31 @@
+body {
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  background-color: red;
+  margin-bottom: -16px;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: bisque;
+}
+.basic-info {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  border: none;
+}
+.race-shirt-info {
+  border: none;
+}
+.payment-methods {
+  border: none;
+}
+legend {
+  font-size: 25px;
+}
+h1 {
+  font-size: 40px;
+}
