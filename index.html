@@ -12,17 +12,20 @@
       <div class="header-container">
         <h1>1st Annual Hello World Run</h1>
         <h2>Celebrating the Hard Work of Aspiring Front-End Developers</h2>
+      </div>
+    </header>
+    <div class="container">
+      <div class="race-info">
+        <h2>Race Information</h2>
         <p>Date: Saturday October 1, 2022</p>
         <p>Location: Cleveland Metroparks</p>
         <p>Time: Race starts at 8am, Packet Pick-up starts at 7am</p>
         <p>Distances: 10K, 5K, 1 mile walk</p>
       </div>
-    </header>
-    <div class="container">
       <form action="index.html" method="post" novalidate>
         <div class="basic-info-box">
           <fieldset class="basic-info">
-            <legend>Basic Information</legend>
+            <legend>Runner Information</legend>
             <label for="first-name"
               >First Name: <span>*</span>
               <input type="text" id="first-name" name="user-first-name"
@@ -61,12 +64,20 @@
           </fieldset>
           <fieldset class="race-shirt-info">
             <legend>Race Information</legend>
+            <label for="gender-selected">Select Gender: <span>*</span></label>
+            <select id="gender-selected" name="user-gender">
+              <option hidden>Select Gender</option>
+              <option value="10K">Male</option>
+              <option value="5K">Female</option>
+              <option value="1 mile walk">Prefer not to say</option>
+            </select>
+
             <label for="race-selected">Select Race: <span>*</span></label>
             <select id="race-selected" name="user-race">
               <option hidden>Select Race</option>
-              <option value="10K">10K</option>
-              <option value="5K">5K</option>
-              <option value="1 mile walk">1 mile walk</option>
+              <option value="10K">10K - $40</option>
+              <option value="5K">5K - $25</option>
+              <option value="1 mile walk">1 mile walk - $15</option>
             </select>
             <div class="shirt-sizes">
               <label for="size">T-shirt Size: <span>*</span></label>
