@@ -5,6 +5,8 @@ body {
 header {
   text-align: center;
   background-color: red;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 .container {
   margin: 0 auto;
@@ -33,6 +35,7 @@ select {
 }
 legend {
   font-size: 25px;
+
   margin-bottom: 15px;
 }
 h1 {
