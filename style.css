@@ -8,34 +8,49 @@ header {
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.container {
-  margin: 0 auto;
-  width: 800px;
+
+container {
+  max-width: 800px;
 }
+form {
+  width: 800px;
+  padding-top: 10px;
+}
+.form-center {
+  display: flex;
+  justify-content: center;
+}
+
 .race-info {
   text-align: center;
   padding-top: 20px;
 }
 .basic-info {
+  border: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  border: none;
 }
-
 .race-shirt-info {
   border: none;
 }
 .payment-methods {
   border: none;
 }
+.button-center {
+  display: flex;
+  justify-content: center;
+}
 input,
 select {
-  margin-bottom: 10px;
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
+
 legend {
   font-size: 25px;
-
   margin-bottom: 15px;
 }
 h1 {
